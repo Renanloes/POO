@@ -1,8 +1,8 @@
-package Polimorfismo;
+package Polimorfismo.Override;
 
-import Polimorfismo.Gato;
-import Polimorfismo.Cachorro;
-import Polimorfismo.Animal;
+import Polimorfismo.Override.Gato;
+import Polimorfismo.Override.Cachorro;
+import Polimorfismo.Override.Animal;
 
 public class Main {
     public static void main(String[] args) {

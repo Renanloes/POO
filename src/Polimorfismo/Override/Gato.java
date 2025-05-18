@@ -1,6 +1,6 @@
-package Polimorfismo;
+package Polimorfismo.Override;
 
-import Polimorfismo.Animal;
+import Polimorfismo.Override.Animal;
 
 public class Gato extends Animal {
     @Override
