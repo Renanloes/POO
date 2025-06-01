@@ -3,9 +3,16 @@ package Desafio;
 public abstract class Funcionario {
 
     private String nome;
-    private Double horas;
+    private double horas;
 
-    public void calcularSalario(String nome, Double horas) {}
+    public Funcionario(String nome, double horas) {
+        this.nome = nome;
+        this.horas = horas;
+    }
+
+    public abstract String Nome(String Nome);
+
+    public abstract double Valor(double Valor);
 
     public String getNome() {
         return nome;
@@ -15,11 +22,11 @@ public abstract class Funcionario {
         this.nome = nome;
     }
 
-    public Double getHoras() {
+    public double getHoras() {
         return horas;
     }
 
-    public void setHoras(Double horas) {
+    public void setHoras(double horas) {
         this.horas = horas;
     }
 
