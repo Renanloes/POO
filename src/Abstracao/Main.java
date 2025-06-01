@@ -12,7 +12,5 @@ public class Main {
         boolean ok1 = p1.processar(); // retorna true
         boolean ok2 = p2.processar(); // retorna true
 
-        // Aqui você poderia armazenar os resultados em variáveis,
-        // enviar para um banco de dados, registrar em log, etc.
     }
 }
