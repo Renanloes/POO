@@ -1,9 +1,10 @@
-package Desafio;
+package Model.Desafio;
+
+import Desafio.Funcionario;
 
 public class FreeLancer extends Funcionario {
     
-    double valorHora = 50.00;
-    
+
     public FreeLancer(String Nome, double Valor) {
         super(Nome, Valor);
     }
@@ -15,6 +16,7 @@ public class FreeLancer extends Funcionario {
 
     @Override
     public double Valor(double valorHora) {
+        valorHora = 50.00;
         return (getHoras()*valorHora);
     }
 

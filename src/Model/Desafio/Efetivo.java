@@ -1,22 +1,32 @@
-package Desafio;
+package Model.Desafio;
 
-public class Efetivo extends Funcionario {
-    
-    double valorHora = 50.00;
-    
-    public Efetivo(String Nome, double Valor) {
-        super(Nome, Valor);
+
+public class Efetivo {
+    private String nome;
+    private double valor;
+
+        
+    public Efetivo(String Nome, double Valor){
+        this.nome = Nome;
+        this.valor = Valor;
     }
     
-    @Override
-    public String Nome(String nome) {
-        return getNome();
+    public double getValor(){
+        return valor;
     }
-
-    @Override
-    public double Valor(double valorHora) {
+    
+    public void setValor(double Valor) {
+        double valorHora = 50.00;
         double bonus = 500;
-        return (getHoras()*valorHora) + bonus;
+        this.valor = (valor*valorHora) + bonus;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setNome(String Nome){
+        this.nome = Nome;
     }
 
 }

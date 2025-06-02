@@ -1,9 +1,10 @@
-package Desafio;
+package Model.Desafio;
+
+import Desafio.Funcionario;
 
 public class Estagiario extends Funcionario {
     
-    double valorHora = 0.8;
-    
+
     public Estagiario(String Nome, double Valor) {
         super(Nome, Valor);
     }
@@ -15,6 +16,7 @@ public class Estagiario extends Funcionario {
 
     @Override
     public double Valor(double finalEstagio) {
+        finalEstagio = 0.8;
         return getHoras()*finalEstagio;
     }
 
