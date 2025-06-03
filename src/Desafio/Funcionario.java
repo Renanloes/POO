@@ -1,33 +1,29 @@
 package Desafio;
 
-public abstract class Funcionario {
+public class Funcionario {
 
-    private String nome;
-    private double horas;
+    String nome;
+    double valor;
 
-    public Funcionario(String nome, double horas) {
-        this.nome = nome;
-        this.horas = horas;
+    public Funcionario(String Nome, double Valor) {
+        this.nome = Nome;
+        this.valor = Valor;
     }
-
-    public abstract String Nome(String Nome);
-
-    public abstract double Valor(double Valor);
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String Nome) {
+        this.nome = Nome;
     }
 
-    public double getHoras() {
-        return horas;
+    public double getValor() {
+        return valor;
     }
 
-    public void setHoras(double horas) {
-        this.horas = horas;
+    public void setValor(double Valor) {
+        this.valor = Valor;
     }
 
 }

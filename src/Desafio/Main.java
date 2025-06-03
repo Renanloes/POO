@@ -8,39 +8,35 @@ import Model.Desafio.FreeLancer;
 public class Main {
 
     public static void main(String[] args) {
-         Scanner input = new Scanner(System.in);
+        Funcionario dados = Requisicao();
 
         String funcio = null;
-        double horas = 0;
+        double valor = 0;
+        
 
-        System.out.println("Qual o nome do Funcionário?\n");
-        funcio = input.nextLine();
-
-        System.out.println("Qual foi a carga horária?\n");
-        horas = input.nextDouble(); 
-      //  Requisicao(funcio, horas);
-        Efetivo Efetivo = new Efetivo(funcio, horas);
-        System.out.println("Seu nome é: " + Efetivo.getNome() + "\n e possui o saslário de: " + Efetivo.getValor() + "!");
-     /*   
-        Requisicao(funcio, horas);
-        Estagiario Estagio = new Estagiario(funcio, horas);
-        System.out.println("Seu nome é: " + Estagio.getNome() + "\n e possui o saslário de: " + Estagio.getHoras() + "!");
-              
-        Requisicao(funcio, horas);
-        FreeLancer Freela = new FreeLancer(funcio, horas);
-        System.out.println("Seu nome é: " + Freela.getNome() + "\n e possui o saslário de: " + Freela.getHoras() + "!");
-       */ 
+        Efetivo efetivo = new Efetivo(dados.getNome(), dados.getValor());
+        System.out.println("Seu nome é: " + efetivo.getNome() + "\n e possui o salário de: " + efetivo.getValor() + " como Efetivo!");
+        
+        Requisicao();
+        Estagiario estagio = new Estagiario(dados.getNome(), dados.getValor());
+        System.out.println("Seu nome é: " + estagio.getNome() + "\n e possui o salário de: " + estagio.getValor() + " como Estagiário!");
+        
+        Requisicao();
+        FreeLancer freeLa = new FreeLancer(dados.getNome(), dados.getValor());
+        System.out.println("Seu nome é: " + freeLa.getNome() + "\n e possui o salário de: " + freeLa.getValor() + " como FreeLancer!");
     }
 
-    public static void Requisicao(String funcio, double horas) {
+    public static Funcionario Requisicao() {
         Scanner input = new Scanner(System.in);
         
         System.out.println("Qual o nome do Funcionário?\n");
-        funcio = input.nextLine();
+        String funcio = input.nextLine();
 
         System.out.println("Qual foi a carga horária?\n");
-        horas = input.nextDouble(); 
-
+        double valor = input.nextDouble(); 
+        
+        return new Funcionario(funcio, valor);
+     
     }
 
 }
