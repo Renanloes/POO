@@ -14,6 +14,7 @@ public class Main {
         double valor = 0;
         
 
+        
         Efetivo efetivo = new Efetivo(dados.getNome(), dados.getValor());
         System.out.println("Seu nome é: " + efetivo.getNome() + "\n e possui o salário de: " + efetivo.getValor() + " como Efetivo!");
         
