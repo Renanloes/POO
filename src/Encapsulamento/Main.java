@@ -12,6 +12,8 @@ public class Main {
         System.out.println("Quantas pessoas deseja cadastrar?");
         int qtd = entrada.nextInt();
         entrada.nextLine(); // limpar buffer
+        
+        
 
         for (int i = 0; i < qtd; i++) {
             System.out.println("Digite o nome da pessoa " + (i + 1) + ":");
