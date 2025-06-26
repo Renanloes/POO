@@ -1,11 +1,10 @@
 package Encapsulamento;
 
-public class contaBancaria {
+public class ContaBancaria {
     
     private String titular;
     private String numeroConta;
-    private Double saldo = 0.0;
-    double valor;
+    private Double saldo = 1000.0;
 
     public String getTitular() {
         return titular;
@@ -23,7 +22,11 @@ public class contaBancaria {
         this.numeroConta = numeroConta;
     }
 
-    public Double getsaldo(Double saldo){
+    public Double getSaldo(){
         return saldo;
+    }
+    
+    public void setSaldo(Double saldo){
+        this.saldo = saldo;
     }
 }
