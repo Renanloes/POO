@@ -1,29 +1,24 @@
 package Desafio_Encaps_Heran;
 
-public class Funcionario {
+public class Funcionario extends Pessoa {
 
-    String nome;
-    double valor;
+    private String Cargo;
 
-    public Funcionario(String Nome, double Valor) {
-        this.nome = Nome;
-        this.valor = Valor;
+    public Funcionario(String nome, int idade, String cpf, String cargo) {
+        super(nome, idade, cpf);
+        this.Cargo = cargo;
     }
 
-    public String getNome() {
-        return nome;
+    void ExibirDados() {
+        super.Dados();
+        System.out.println("Cliente: " + Cargo);
     }
 
-    public void setNome(String Nome) {
-        this.nome = Nome;
+    public String getCargo() {
+        return Cargo;
     }
 
-    public double getValor() {
-        return valor;
+    public void setCargo(String Cargo) {
+        this.Cargo = Cargo;
     }
-
-    public void setValor(double Valor) {
-        this.valor = Valor;
-    }
-
 }
