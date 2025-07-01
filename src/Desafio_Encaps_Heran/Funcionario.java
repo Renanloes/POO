@@ -1,4 +1,4 @@
-package Desafio;
+package Desafio_Encaps_Heran;
 
 public class Funcionario {
 

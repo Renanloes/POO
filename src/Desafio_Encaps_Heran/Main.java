@@ -1,0 +1,11 @@
+package Desafio_Encaps_Heran;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Funcionario f = new Funcionario("Renan", 28, "10239355979", "Desenvolvedor");
+        Funcionario f = new Funcionario("Joana", 35, "10230450678", "CL123");
+    }
+
+}
