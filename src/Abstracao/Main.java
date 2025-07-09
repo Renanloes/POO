@@ -3,14 +3,13 @@ package Abstracao;
 
 public class Main {
     public static void main(String[] args) {
-        Pagamento p1 = new PagamentoCartao(100.00);
-        Pagamento p2 = new PagamentoPix(200.00);
-
-        double total1 = p1.valor + p1.calcularTaxa();
-        double total2 = p2.valor + p2.calcularTaxa();
-
-        boolean ok1 = p1.processar(); // retorna true
-        boolean ok2 = p2.processar(); // retorna true
-
+        Pagamento PagCar = new PagamentoCartao(100.00);
+        Pagamento PagPix = new PagamentoPix(200.00);
+        
+        PagPix.calcularTaxa();
+        PagPix.gerarComprovante();
+        
+        PagCar.calcularTaxa();
+        PagCar.gerarComprovante();
     }
 }

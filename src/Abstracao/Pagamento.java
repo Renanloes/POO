@@ -1,12 +1,21 @@
 package Abstracao;
 
 public abstract class Pagamento {
-    protected double valor;
-
-    public Pagamento(double valor) {
-        this.valor = valor;
+    private double Valor;
+    
+    public Pagamento(double valor){
+        this.Valor = valor;
     }
-
-    public abstract double calcularTaxa();
-    public abstract boolean processar();
+    
+    public double getValor(){
+        return Valor;
+    }
+    
+    public void setValor(double valor){
+        this.Valor = valor;
+    }
+    
+    public abstract void calcularTaxa();
+    
+    public abstract void gerarComprovante();
 }
