@@ -1,4 +1,3 @@
-
 package Polimorfismo.Override;
 
 public class Animal {
